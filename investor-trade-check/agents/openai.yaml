@@ -1,0 +1,7 @@
+interface:
+  display_name: "投资交易检查器"
+  short_description: "用于买卖加减仓前检查冲动和风险"
+  default_prompt: "Use $investor-trade-check before I make this investment trade."
+
+policy:
+  allow_implicit_invocation: true

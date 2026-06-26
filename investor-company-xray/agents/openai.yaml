@@ -1,0 +1,7 @@
+interface:
+  display_name: "投资公司透视镜"
+  short_description: "用于判断公司是否值得长期研究"
+  default_prompt: "Use $investor-company-xray to review whether this company is a high-quality long-term investment candidate."
+
+policy:
+  allow_implicit_invocation: true

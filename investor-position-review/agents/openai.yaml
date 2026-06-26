@@ -1,0 +1,7 @@
+interface:
+  display_name: "投资持仓复盘器"
+  short_description: "用于复盘持仓逻辑是否仍然成立"
+  default_prompt: "Use $investor-position-review to review whether my original investment thesis still holds."
+
+policy:
+  allow_implicit_invocation: true

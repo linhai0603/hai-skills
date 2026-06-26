@@ -1,23 +1,36 @@
 # hai-skills
 
-Reusable Codex skills for personal AI workflows.
+Reusable Codex skills for personal AI workflows, knowledge systems, and long-term investor decision discipline.
 
 `hai-skills` is a public collection of Codex Skills. Each skill lives in its own folder, can be installed independently, and is designed to turn repeatable work into a reusable AI workflow.
 
-The first skill in this collection is `knowledge-system-curator`: a workflow for turning scattered notes, excerpts, meeting notes, and documents into structured knowledge systems.
+> Investment-related skills in this repository are educational decision-support workflows. They do not pick stocks, predict prices, guarantee returns, or provide financial advice.
 
 ## Why Star This Repository
 
 - Install practical Codex Skills without rebuilding the same prompts from scratch.
-- Reuse workflows for knowledge work, document updates, and personal productivity.
-- Learn how to package your own repeatable AI workflows as Codex Skills.
-- Follow future skills as this collection expands beyond knowledge management.
+- Reuse workflows for knowledge work, document updates, and investment decision hygiene.
+- Learn how to package repeatable AI workflows as Codex Skills.
+- Follow future skills as this collection expands beyond one domain.
 
 ## Skills
 
 | Skill | What It Does | Best For |
 | --- | --- | --- |
-| [`knowledge-system-curator`](knowledge-system-curator/SKILL.md) | Merges new materials into an existing knowledge base, removes duplication, improves structure, and preserves important source wording. | Personal knowledge bases, book notes, research systems, Feishu/Lark docs, Markdown documents, long-form frameworks |
+| [`investor-company-xray`](investor-company-xray/SKILL.md) | Reviews whether a company deserves long-term investor attention by checking business model, governance, management, moat, pricing power, financial health, and valuation caveats. | Long-term company research, watchlist review, business-quality checks |
+| [`investor-trade-check`](investor-trade-check/SKILL.md) | Runs a pre-trade investment checklist before buying, selling, adding, or trimming, with attention to FOMO, panic, circle of competence, margin of safety, sizing, and exit rules. | Pre-buy checks, pre-sell checks, position-size discipline, emotion-aware investing |
+| [`investor-position-review`](investor-position-review/SKILL.md) | Reviews an existing holding by checking whether the original investment thesis still holds after price moves, news, earnings, valuation changes, or emotional pressure. | Holding reviews, thesis checks, post-earnings review, volatility vs thesis-break diagnosis |
+| [`knowledge-system-curator`](knowledge-system-curator/SKILL.md) | Merges new materials into an existing knowledge base, removes duplication, improves structure, and preserves important source wording. | Personal knowledge bases, book notes, research systems, Feishu/Lark docs, Markdown documents |
+
+## Featured Investment Skills
+
+The investment skills are designed as a three-part decision discipline system:
+
+1. `investor-company-xray`: before you call a company "good", examine the business.
+2. `investor-trade-check`: before you trade, check whether evidence or emotion is driving the action.
+3. `investor-position-review`: after you own something, review whether the original thesis is still alive.
+
+They are not stock pickers. They help users slow down, write down assumptions, find missing evidence, and separate business logic from market noise.
 
 ## Featured Skill: Knowledge System Curator
 
@@ -39,9 +52,9 @@ Most knowledge bases do not fail because there is too little information. They f
 | Notes are scattered across documents, excerpts, chats, and meeting notes. | New material is integrated into a coherent knowledge system. |
 | Similar ideas appear repeatedly in different wording. | Repeated ideas are merged while preserving important nuance. |
 | New notes are appended to the end of a document. | New notes are placed where they strengthen the structure. |
-| It is unclear whether the outline should change. | Codex first diagnoses whether the framework should be preserved or reorganized. |
+| It is unclear whether an investment action is evidence-based or emotional. | A structured check separates thesis, valuation, position size, and behavioral triggers. |
 
-## Quick Install
+## Quick Start
 
 Clone the repository:
 
@@ -53,14 +66,46 @@ Copy the skill you want into your local Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R hai-skills/knowledge-system-curator ~/.codex/skills/
+cp -R hai-skills/investor-trade-check ~/.codex/skills/
 ```
 
 Restart Codex or open a new Codex session so the skill can be discovered.
 
-## Quick Usage
+## Examples
 
-Invoke the skill explicitly:
+Investment company x-ray:
+
+```text
+Use $investor-company-xray to review this company as a long-term investment candidate.
+Company: ExampleCo
+What I know: ...
+Financial notes: ...
+Questions I am unsure about: ...
+```
+
+Investment pre-trade check:
+
+```text
+Use $investor-trade-check before I add to this position.
+Action I want to take: add
+Reason: the price fell 18%
+Original thesis: ...
+Current allocation: ...
+My emotion: anxious but tempted
+```
+
+Investment position review:
+
+```text
+Use $investor-position-review to review whether my original thesis still holds.
+Holding: ExampleCo
+Original thesis: ...
+What changed: ...
+Current price move: ...
+My current concern: ...
+```
+
+Knowledge system update:
 
 ```text
 用 $knowledge-system-curator 把这些新增内容整合进这个知识库文档。
@@ -69,7 +114,7 @@ Invoke the skill explicitly:
 要求：只基于我提供的资料，不新增外部内容；如果需要调整目录，先给我计划，确认后再执行。
 ```
 
-English example:
+English knowledge-system example:
 
 ```text
 Use $knowledge-system-curator to update this knowledge base.
@@ -93,13 +138,41 @@ See the demo workflow:
 
 The demo shows how scattered investment notes can be classified, deduplicated, and integrated into a cleaner knowledge system. It is intentionally small and source-only so the workflow is easy to inspect.
 
+## What it does
+
+- Provides small, focused Codex Skills for repeatable knowledge and decision workflows.
+- Keeps each skill modular so users can install only what they need.
+- Uses structured references, templates, examples, and safety boundaries instead of one long prompt.
+- Abstracts private source material into reusable public workflows.
+
 ## Use Cases
 
 - Update a personal knowledge base after reading new books or articles.
 - Merge messy excerpts into a structured research framework.
 - Maintain an investment, product, sales, writing, or operating system document.
-- Reorganize a long Feishu/Lark document without losing source meaning.
-- Ask Codex to decide whether new material changes the existing outline before editing.
+- Review whether a company is a genuine long-term research candidate.
+- Check whether a trade is driven by thesis and rules or by FOMO, panic, envy, or overconfidence.
+- Review a holding after news, earnings, price moves, or portfolio drift.
+
+## Requirements
+
+- Codex with local skill support.
+- Git for cloning this repository.
+- No API key, brokerage login, or private financial account access is required.
+
+## Limitations
+
+- Investment skills are not financial, legal, tax, or accounting advice.
+- They do not recommend specific securities, predict prices, or guarantee outcomes.
+- They depend on the quality of information the user provides.
+- They are designed for decision hygiene and structured review, not automated trading.
+
+## Security & Privacy
+
+- Do not paste brokerage passwords, API keys, account numbers, ID documents, or private credentials.
+- Prefer summaries and redacted examples when using personal financial information.
+- The skills do not require external services by default.
+- Public examples are fictional and intentionally non-confidential.
 
 ## FAQ
 
@@ -107,7 +180,11 @@ The demo shows how scattered investment notes can be classified, deduplicated, a
 
 No. A Codex Skill is a reusable workflow instruction package. It teaches Codex when to use a workflow, how to execute it, and how to validate the result.
 
-### Does it add outside knowledge?
+### Do the investment skills provide financial advice?
+
+No. They are educational decision-support workflows. They do not recommend specific securities, predict returns, or replace professional advice.
+
+### Does `knowledge-system-curator` add outside knowledge?
 
 By default, no. `knowledge-system-curator` is designed to work only from the target document and the source materials you provide, unless you explicitly ask for external research.
 
@@ -119,20 +196,18 @@ Yes. The skill is written to support live document updates, including Feishu/Lar
 
 Yes. This repository follows a one-repository, many-skills structure. Each skill should live in its own folder.
 
-### Why is the repository description broad?
-
-Because `hai-skills` is meant to become a collection of personal AI workflow skills, not only a knowledge-management project. Individual skills should describe their own specific use cases.
-
 ## Repository Layout
 
 ```text
 hai-skills/
   README.md
+  CHANGELOG.md
+  CONTRIBUTING.md
   LICENSE
   assets/
     social-preview.svg
-    social-preview.png
   docs/
+    github-metadata.md
     promotion.md
     repository-settings.md
   examples/
@@ -140,10 +215,30 @@ hai-skills/
       input.md
       workflow.md
       output.md
+  investor-company-xray/
+    SKILL.md
+    references/
+    templates/
+    examples/
+    agents/
+  investor-trade-check/
+    SKILL.md
+    references/
+    templates/
+    examples/
+    agents/
+  investor-position-review/
+    SKILL.md
+    references/
+    templates/
+    examples/
+    agents/
   knowledge-system-curator/
     SKILL.md
     agents/
       openai.yaml
+  scripts/
+    pre-publish-review.sh
 ```
 
 ## Suggested Repository Description
@@ -151,6 +246,14 @@ hai-skills/
 ```text
 Reusable Codex skills for personal AI workflows.
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Release Notes
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
