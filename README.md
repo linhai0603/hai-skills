@@ -1,6 +1,6 @@
 # hai-skills
 
-Reusable Codex skills for personal AI workflows, knowledge systems, and long-term investor decision discipline.
+Reusable Codex skills for knowledge curation and long-term investor decision workflows.
 
 `hai-skills` is a public collection of Codex Skills. Each skill lives in its own folder, can be installed independently, and is designed to turn repeatable work into a reusable AI workflow.
 
@@ -132,9 +132,9 @@ Requirements:
 
 See the demo workflow:
 
-- [Input notes](examples/investment-system-update/input.md)
-- [Curator workflow](examples/investment-system-update/workflow.md)
-- [Integrated output](examples/investment-system-update/output.md)
+- [Input notes](knowledge-system-curator/examples/investment-system-update/input.md)
+- [Curator workflow](knowledge-system-curator/examples/investment-system-update/workflow.md)
+- [Integrated output](knowledge-system-curator/examples/investment-system-update/output.md)
 
 The demo shows how scattered investment notes can be classified, deduplicated, and integrated into a cleaner knowledge system. It is intentionally small and source-only so the workflow is easy to inspect.
 
@@ -210,11 +210,6 @@ hai-skills/
     github-metadata.md
     promotion.md
     repository-settings.md
-  examples/
-    investment-system-update/
-      input.md
-      workflow.md
-      output.md
   investor-company-xray/
     SKILL.md
     references/
@@ -237,6 +232,13 @@ hai-skills/
     SKILL.md
     agents/
       openai.yaml
+    docs/
+      promotion.md
+    examples/
+      investment-system-update/
+        input.md
+        workflow.md
+        output.md
   scripts/
     pre-publish-review.sh
 ```
