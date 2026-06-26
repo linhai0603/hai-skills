@@ -2,11 +2,11 @@
 
 ## Suggested About
 
-Personal Codex skills for knowledge work and long-term investor decision discipline.
+Reusable Codex skills for knowledge curation and long-term investor decision workflows.
 
 ## Product-Focused About
 
-Reusable Codex skills that turn repeatable knowledge and investment decision workflows into structured AI-assisted reviews.
+Codex skills that turn messy knowledge updates and investment decisions into structured AI-assisted workflows.
 
 ## Technical About
 

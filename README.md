@@ -244,7 +244,7 @@ hai-skills/
 ## Suggested Repository Description
 
 ```text
-Reusable Codex skills for personal AI workflows.
+Reusable Codex skills for knowledge curation and long-term investor decision workflows.
 ```
 
 ## Contributing
