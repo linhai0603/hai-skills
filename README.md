@@ -17,10 +17,10 @@ Reusable Codex skills for knowledge curation and long-term investor decision wor
 
 | Skill | What It Does | Best For |
 | --- | --- | --- |
-| [`investor-company-xray`](investor-company-xray/SKILL.md) | Reviews whether a company deserves long-term investor attention by checking business model, governance, management, moat, pricing power, financial health, and valuation caveats. | Long-term company research, watchlist review, business-quality checks |
-| [`investor-trade-check`](investor-trade-check/SKILL.md) | Runs a pre-trade investment checklist before buying, selling, adding, or trimming, with attention to FOMO, panic, circle of competence, margin of safety, sizing, and exit rules. | Pre-buy checks, pre-sell checks, position-size discipline, emotion-aware investing |
-| [`investor-position-review`](investor-position-review/SKILL.md) | Reviews an existing holding by checking whether the original investment thesis still holds after price moves, news, earnings, valuation changes, or emotional pressure. | Holding reviews, thesis checks, post-earnings review, volatility vs thesis-break diagnosis |
-| [`knowledge-system-curator`](knowledge-system-curator/SKILL.md) | Merges new materials into an existing knowledge base, removes duplication, improves structure, and preserves important source wording. | Personal knowledge bases, book notes, research systems, Feishu/Lark docs, Markdown documents |
+| [`investor-company-xray`](investor-company-xray/README.md) | Reviews whether a company deserves long-term investor attention by checking business model, governance, management, moat, pricing power, financial health, and valuation caveats. | Long-term company research, watchlist review, business-quality checks |
+| [`investor-trade-check`](investor-trade-check/README.md) | Runs a pre-trade investment checklist before buying, selling, adding, or trimming, with attention to FOMO, panic, circle of competence, margin of safety, sizing, and exit rules. | Pre-buy checks, pre-sell checks, position-size discipline, emotion-aware investing |
+| [`investor-position-review`](investor-position-review/README.md) | Reviews an existing holding by checking whether the original investment thesis still holds after price moves, news, earnings, valuation changes, or emotional pressure. | Holding reviews, thesis checks, post-earnings review, volatility vs thesis-break diagnosis |
+| [`knowledge-system-curator`](knowledge-system-curator/README.md) | Merges new materials into an existing knowledge base, removes duplication, improves structure, and preserves important source wording. | Personal knowledge bases, book notes, research systems, Feishu/Lark docs, Markdown documents |
 
 ## Featured Investment Skills
 
@@ -219,24 +219,28 @@ hai-skills/
       verify-readme-links.sh
   investor-company-xray/
     SKILL.md
+    README.md
     references/
     templates/
     examples/
     agents/
   investor-trade-check/
     SKILL.md
+    README.md
     references/
     templates/
     examples/
     agents/
   investor-position-review/
     SKILL.md
+    README.md
     references/
     templates/
     examples/
     agents/
   knowledge-system-curator/
     SKILL.md
+    README.md
     agents/
       openai.yaml
     docs/
@@ -248,10 +252,19 @@ hai-skills/
         output.md
 ```
 
+## Repository Rules
+
+- The root directory is reserved for repository entry files and skill folders.
+- Each skill owns its own `references/`, `templates/`, `examples/`, `docs/`, `assets/`, and `scripts/` if it needs them.
+- Repository-level publishing, GitHub metadata, checks, and social preview files live under `.github/`.
+- Before adding or publishing a new skill, run `.github/scripts/pre-publish-review.sh .` to catch misplaced root-level folders.
+
+See [.github/docs/repository-layout.md](.github/docs/repository-layout.md) for the full layout rule.
+
 ## Suggested Repository Description
 
 ```text
-Reusable Codex skills for knowledge curation and long-term investor decision workflows.
+Reusable Codex Skills for personal knowledge systems, investment decision workflows, and practical AI automation.
 ```
 
 ## Contributing

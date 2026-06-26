@@ -34,6 +34,14 @@ check_file "LICENSE"
 check_file ".github/CHANGELOG.md"
 check_file ".github/CONTRIBUTING.md"
 check_file ".github/docs/github-metadata.md"
+check_file ".github/docs/repository-layout.md"
+
+for dir in assets docs examples scripts templates references agents; do
+  if [ -e "$ROOT/$dir" ]; then
+    echo "FAIL: root-level $dir/ is not allowed; put skill-specific files inside the relevant skill folder or repository maintenance files under .github/" >&2
+    FAILED=1
+  fi
+done
 
 check_readme_section "Quick Start"
 check_readme_section "Examples"

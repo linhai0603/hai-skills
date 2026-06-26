@@ -36,6 +36,12 @@ for skill_file in "$ROOT"/*/SKILL.md; do
   else
     fail_item "$skill_name is missing agents/openai.yaml"
   fi
+
+  if [ -f "$skill_dir/README.md" ]; then
+    pass_item "$skill_name has README.md"
+  else
+    fail_item "$skill_name is missing README.md"
+  fi
 done
 
 if [ "$found" -eq 0 ]; then

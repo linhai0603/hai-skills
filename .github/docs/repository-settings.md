@@ -7,13 +7,14 @@ This file records recommended GitHub repository settings. It does not change the
 Recommended short description:
 
 ```text
-Reusable Codex skills for knowledge curation and long-term investor decision workflows.
+Reusable Codex Skills for personal knowledge systems, investment decision workflows, and practical AI automation.
 ```
 
 Why this works:
 
 - It describes the whole repository, not only one skill.
-- It names the current two strongest themes: knowledge curation and investor decision workflows.
+- It names the current two strongest themes: knowledge systems and investor decision workflows.
+- It leaves room for future practical AI automation skills.
 - It is specific enough for GitHub search, profile pages, and shared links.
 
 ## Skill-Level Description

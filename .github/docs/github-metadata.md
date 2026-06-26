@@ -2,7 +2,7 @@
 
 ## Suggested About
 
-Reusable Codex skills for knowledge curation and long-term investor decision workflows.
+Reusable Codex Skills for personal knowledge systems, investment decision workflows, and practical AI automation.
 
 ## Product-Focused About
 
