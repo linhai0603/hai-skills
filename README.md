@@ -201,15 +201,22 @@ Yes. This repository follows a one-repository, many-skills structure. Each skill
 ```text
 hai-skills/
   README.md
-  CHANGELOG.md
-  CONTRIBUTING.md
   LICENSE
-  assets/
-    social-preview.svg
-  docs/
-    github-metadata.md
-    promotion.md
-    repository-settings.md
+  .gitignore
+  .github/
+    CHANGELOG.md
+    CONTRIBUTING.md
+    assets/
+      social-preview.svg
+    docs/
+      github-metadata.md
+      repository-settings.md
+    scripts/
+      pre-publish-review.sh
+      check-sensitive-files.sh
+      check-skill-structure.sh
+      check-repo-package.sh
+      verify-readme-links.sh
   investor-company-xray/
     SKILL.md
     references/
@@ -239,8 +246,6 @@ hai-skills/
         input.md
         workflow.md
         output.md
-  scripts/
-    pre-publish-review.sh
 ```
 
 ## Suggested Repository Description
@@ -251,11 +256,11 @@ Reusable Codex skills for knowledge curation and long-term investor decision wor
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## Release Notes
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [.github/CHANGELOG.md](.github/CHANGELOG.md).
 
 ## License
 

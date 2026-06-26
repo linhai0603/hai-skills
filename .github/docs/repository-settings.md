@@ -55,13 +55,13 @@ automation
 Suggested file:
 
 ```text
-assets/social-preview.png
+.github/assets/social-preview.png
 ```
 
 If GitHub does not accept the generated PNG, use the SVG source at:
 
 ```text
-assets/social-preview.svg
+.github/assets/social-preview.svg
 ```
 
 and export it manually as a PNG with size `1280x640`.

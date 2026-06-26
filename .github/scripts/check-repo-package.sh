@@ -31,9 +31,9 @@ check_readme_section() {
 
 check_file "README.md"
 check_file "LICENSE"
-check_file "CHANGELOG.md"
-check_file "CONTRIBUTING.md"
-check_file "docs/github-metadata.md"
+check_file ".github/CHANGELOG.md"
+check_file ".github/CONTRIBUTING.md"
+check_file ".github/docs/github-metadata.md"
 
 check_readme_section "Quick Start"
 check_readme_section "Examples"

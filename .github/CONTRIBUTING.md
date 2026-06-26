@@ -15,7 +15,7 @@ Thanks for helping improve `hai-skills`.
 Run:
 
 ```bash
-scripts/pre-publish-review.sh .
+.github/scripts/pre-publish-review.sh .
 ```
 
 Check that:
