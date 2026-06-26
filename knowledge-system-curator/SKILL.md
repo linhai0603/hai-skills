@@ -11,6 +11,8 @@ Use this skill to turn scattered source materials into a coherent, maintainable 
 
 The default goal is to update an existing document or knowledge base so it becomes more complete, better structured, deduplicated, and easier to keep updating later.
 
+Use this skill especially when the user is maintaining a living system document: investment frameworks, research maps, product playbooks, reading notes, operating manuals, meeting-derived knowledge bases, or Feishu/Lark wiki pages.
+
 ## Operating Rules
 
 - Work only from the user's supplied source materials and target document unless the user explicitly asks for external research.
@@ -93,6 +95,16 @@ When approved:
 - Add blank space where it improves readability in long documents.
 - If marking new content, use the user's requested style and avoid extra explanatory labels unless asked.
 - If updating Feishu/Lark docs, use the relevant Lark document or wiki tools and preserve title, images, and existing placement unless the user requests otherwise.
+
+### Integration Quality Bar
+
+The final document should be:
+
+- `完整`: every important source unit is included or intentionally excluded.
+- `不重复`: overlapping points are merged rather than copied into multiple places.
+- `有结构`: first-level and second-level categories explain the system, not just the source order.
+- `保留原意`: compression does not remove strong source wording, conditions, examples, or judgment.
+- `可继续更新`: future sources can be added without rebuilding the whole document.
 
 ### 6. Validate After Editing
 
