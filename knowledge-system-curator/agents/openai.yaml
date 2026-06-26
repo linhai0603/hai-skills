@@ -1,0 +1,7 @@
+interface:
+  display_name: "知识体系整理"
+  short_description: "用于把新增资料去重重构并整合进结构化知识库文档"
+  default_prompt: "Use $knowledge-system-curator to merge new materials into my existing knowledge base document."
+
+policy:
+  allow_implicit_invocation: true
