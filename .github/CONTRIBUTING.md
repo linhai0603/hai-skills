@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve `hai-skills`.
+Thanks for helping improve `investor-system-skills`.
 
 ## Principles
 

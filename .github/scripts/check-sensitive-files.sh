@@ -35,15 +35,15 @@ if grep -REni "$PATTERN" "$ROOT" \
   --exclude='*.jpg' \
   --exclude='*.jpeg' \
   --exclude='*.gif' \
-  --exclude='*.pdf' >/tmp/hai-skills-sensitive-hits.txt; then
-  cat /tmp/hai-skills-sensitive-hits.txt >&2
+  --exclude='*.pdf' >/tmp/investor-system-skills-sensitive-hits.txt; then
+  cat /tmp/investor-system-skills-sensitive-hits.txt >&2
   fail "sensitive-looking text found; review and redact before publishing"
 fi
 
 if grep -REni '(/Users/|/home/|C:\\Users\\|my\.feishu\.cn|internal-api-drive-stream|bytedance\.larkoffice\.com)' "$ROOT" \
   --exclude-dir=.git \
-  --exclude='check-sensitive-files.sh' >/tmp/hai-skills-private-path-hits.txt; then
-  cat /tmp/hai-skills-private-path-hits.txt >&2
+  --exclude='check-sensitive-files.sh' >/tmp/investor-system-skills-private-path-hits.txt; then
+  cat /tmp/investor-system-skills-private-path-hits.txt >&2
   fail "local path or private source link found"
 fi
 

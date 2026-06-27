@@ -1,6 +1,6 @@
 # Repository Layout Rules
 
-`hai-skills` is a multi-skill repository. The root directory should stay easy to scan.
+`investor-system-skills` is a multi-skill investment-system repository. The root directory should stay easy to scan.
 
 ## Root Directory
 

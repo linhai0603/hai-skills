@@ -7,25 +7,19 @@ This file records recommended GitHub repository settings. It does not change the
 Recommended short description:
 
 ```text
-Reusable Codex Skills for personal knowledge systems, investment decision workflows, and practical AI automation.
+Codex Skills for building a long-term investor decision system.
 ```
 
 Why this works:
 
 - It describes the whole repository, not only one skill.
-- It names the current two strongest themes: knowledge systems and investor decision workflows.
-- It leaves room for future practical AI automation skills.
+- It names the core job: building a long-term investor decision system.
+- It is broad enough for future investment-system skills.
 - It is specific enough for GitHub search, profile pages, and shared links.
 
 ## Skill-Level Description
 
 Use the README and each skill folder to describe individual skills.
-
-Recommended one-line description for `knowledge-system-curator`:
-
-```text
-Turn scattered notes, excerpts, and documents into structured knowledge systems.
-```
 
 Recommended one-line descriptions for the investment skills:
 
@@ -41,13 +35,14 @@ investor-position-review: Review whether the original thesis for an existing hol
 codex
 codex-skill
 ai-workflow
-knowledge-management
-personal-knowledge-base
 investment
 investor-tools
 decision-support
 behavioral-finance
 value-investing
+investment-system
+long-term-investing
+portfolio-review
 automation
 ```
 
@@ -75,4 +70,4 @@ Keep the About section broad:
 - Description: use the repository-level description above
 - Topics: use the list above
 
-Avoid describing only one skill in the repository description, because this repository is intended to hold multiple skills over time.
+Keep the repository description focused on investment-system skills.

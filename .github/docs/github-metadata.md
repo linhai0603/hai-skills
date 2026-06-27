@@ -2,37 +2,38 @@
 
 ## Suggested About
 
-Reusable Codex Skills for personal knowledge systems, investment decision workflows, and practical AI automation.
+Codex Skills for building a long-term investor decision system.
 
 ## Product-Focused About
 
-Codex skills that turn messy knowledge updates and investment decisions into structured AI-assisted workflows.
+Codex Skills that help long-term investors review companies, check trades, and review positions with structured decision discipline.
 
 ## Technical About
 
-A modular collection of Codex `SKILL.md` workflows with references, templates, examples, and pre-publish checks.
+A modular collection of investment decision-support Codex `SKILL.md` workflows with references, templates, examples, and pre-publish checks.
 
 ## Suggested Topics
 
 - codex
 - codex-skill
 - ai-workflow
-- knowledge-management
 - investment
 - investor-tools
 - decision-support
 - behavioral-finance
 - value-investing
-- personal-knowledge-base
+- investment-system
+- long-term-investing
+- portfolio-review
 - github
 - automation
 
 ## Social Preview Brief
 
-- Title: `hai-skills`
-- Subtitle: `Codex skills for knowledge systems and investor decision discipline`
-- Visual structure: four compact workflow cards: Knowledge Curator, Company X-Ray, Trade Check, Position Review.
-- Core message: `Reusable skills. Clear workflows. No private source material.`
+- Title: `investor-system-skills`
+- Subtitle: `Codex Skills for long-term investor discipline`
+- Visual structure: three compact workflow cards: Company X-Ray, Trade Check, Position Review.
+- Core message: `Review companies, check trades, and revisit theses.`
 - Recommended size: `1280x640`
 - Suggested filename: `.github/assets/social-preview.png`
 

@@ -4,7 +4,6 @@
 
 ### Added
 
-- Added `knowledge-system-curator` for structured knowledge-base updates.
 - Added `investor-company-xray` for long-term company-quality review.
 - Added `investor-trade-check` for pre-trade investment decision checks.
 - Added `investor-position-review` for current holding and thesis review.
